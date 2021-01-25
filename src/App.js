@@ -1,11 +1,14 @@
-import React from "react"
+import React , {Component} from "react"
 import TodoItem from './TodoItem'
 import todosData from './todosData' 
 import './App.css'
-
-function App(){
-  const todoItems= todosData.map(item => <TodoItem key={item.id} item={item} />)
-
+class App extends Component{
+  constructor(){
+    super()
+    this.state={todo:todosData}
+  }
+  render(){
+  const todoItems= this.state.todo.map(item => <TodoItem key={item.id} item={item} />)
   return(
     <div className="todo-list">
       <h1 style={{textAlign:"center"}}>
@@ -14,7 +17,7 @@ function App(){
       {todoItems}
     </div>
   )
-
+  }
 }
 
 export default App;
