@@ -1,28 +1,29 @@
-const todosData=[
+const todosData = [
     {
-        id:1,
-        text:"Take out the trash",
+        id: 1,
+        text: "Take out the trash",
         completed: true
     },
     {
-        id:2,
-        text:"Take out the trash again",
+        id: 2,
+        text: "Grocery shopping",
         completed: false
     },
     {
-        id:3,
-        text:"Take out the trash once more",
-        completed: true
-    },
-    {
-        id:4,
-        text:"Take out the trash last time",
+        id: 3,
+        text: "Clean gecko tank",
         completed: false
     },
     {
-        id:5,
-        text:"Take out the trash finally last time",
+        id: 4,
+        text: "Mow lawn",
         completed: true
+    },
+    {
+        id: 5,
+        text: "Catch up on Arrested Development",
+        completed: false
     }
 ]
-export default todosData;
+
+export default todosData
